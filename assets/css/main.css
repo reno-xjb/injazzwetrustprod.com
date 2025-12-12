@@ -3488,7 +3488,8 @@ input, select, textarea {
 		#banner.major {
 			height: 100dvh;
 			min-height: 30em;
-			max-height: 50em;
+			/*max-height: 50em;*/
+			max-height: none;
 		}
 
 			#banner.major.alt {
@@ -3547,7 +3548,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 5em 0 1em 0 ;
-				height: auto;
+				/*height: auto;*/
 				margin-bottom: -2.75em;
 				max-height: none;
 				min-height: 0;
@@ -3568,7 +3569,7 @@ input, select, textarea {
 					}
 
 				#banner.major {
-					height: auto;
+					/*height: auto;*/
 					min-height: 0;
 					max-height: none;
 				}
