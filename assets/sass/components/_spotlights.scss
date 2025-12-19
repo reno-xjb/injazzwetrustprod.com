@@ -58,6 +58,9 @@
 					max-width: 100%;
 					width: _size(inner);
 				}
+				h1, h2, h3, h4, h5, h6, p, strong {
+					color: _palette(background) !important;
+				}
 			}
 
 			&:nth-child(2n) {

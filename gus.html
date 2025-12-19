@@ -36,14 +36,20 @@
 						<ul class="links">
 							<li><a href="index.html">Accueil</a></li>
 							<li>
-								<a href="#projects">Projets</a>
+								<a href="index.html#projects">Projets</a>
 								<ul class="links sub-links">
-									<li><a href="gus.html">Gus</a></li>
+									<li>
+										<a href="gus.html">Gus</a>
+										<ul class="links sub-links">
+											<li><a href="#teaser">Teaser</a></li>
+											<li><a href="#bio">Bio</a></li>
+										</ul>
+									</li>
 									<li><a href="the-dillingers.html">The Dillingers</a></li>
 									<li><a href="2ble-barrel.html">2ble Barrel</a></li>
 								</ul>		
 							</li>
-							<li><a href="#who">Qui sommes nous ?</a></li>
+							<li><a href="index.html#who">Qui sommes nous ?</a></li>
 							<li><a href="#contact">Contact</a></li>
 							<li>
 								<ul class="icons">
@@ -59,17 +65,16 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
+					<section id="banner" class="project">
 						<div class="inner">
+							<span class="image">
+								<img src="images/Gus-Groupe-Logo.png" alt="" />
+							</span>
 							<header class="major">
-								<h1>IN JAZZ WE TRUST prod.</h1>
+								<h1>Gus</h1>
 							</header>
 							<div class="content">
-								<p>Association de diffusion musicale & booking<br />
-								basée dans les Hautes-Pyrénées.</p>
-								<ul class="actions">
-									<li><a href="#projects" class="button next scrolly">Voir les projets</a></li>
-								</ul>
+								<p>Duo accordéon/contrebasse</p>
 							</div>
 						</div>
 					</section>
@@ -77,48 +82,32 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Projets -->
-							<section id="projects" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/Gus-Groupe-Logo.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="gus.html" class="link">Gus</a></h3>
-										<p>Duo accordéon/contrebasse</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/The-Dillingers-Groupe-Logo.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="the-dillingers.html" class="link">The Dillingers</a></h3>
-										<p>Chanson & Jazz</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/2ble-Barrel-Groupe-Logo.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="2ble-barrel.html" class="link">2ble Barrel</a></h3>
-										<p>Ska & Jazz jamaïcain</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Qui sommes-nous ? -->
-							<section id="who">
+						<!-- Teaser -->
+							<section id="teaser">
 								<div class="inner">
 									<header class="major">
-										<h2>Qui sommes-nous ?</h2>
+										<h2>Teaser</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nJInVpIy2vo?si=hyNgL1jqMvDR0rpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								</div>
+							</section>
+
+						<!-- Spotlights -->
+							<section class="spotlights">
+								<section id="bio">
+									<div class="image">
+										<img src="images/Gus-Groupe-Logo.png" alt="" data-position="center center" />
+									</div>
+									<div class="content">
+										<header class="major">
+											<h2>Bio</h2>
+										</header>
+									<p><strong>Gus !</strong> Entre souffle et cordes, le duo tisse un dialogue sensible entre l’accordéon et la contrebasse. Une rencontre intime, rythmée, où les timbres se mêlent et se répondent.</p>
+									<p>Puisant dans les racines de la <strong>musique brésilienne</strong>, mais aussi <strong>populaires</strong> à la <strong>Marc Perrone</strong> ou aux <strong>couleurs jazz</strong> de <strong>Richard Galliano</strong>, mais aussi des créations originales où le temps se plie, se suspend, s’invente.</p>
+									<p>Ensemble, les deux musiciens explorent les frontières du voyage musical, entre tradition et improvisation, entre nostalgie et mouvement.</p>
+									<p>Un duo où chaque note devient conversation, chaque silence, respiration.</p>
+									</div>
+								</section>
 							</section>
 
 						<!-- Contact -->
@@ -129,29 +118,6 @@
 									</header>
 									<p>Célia Carta - Diffusion & Booking
 									</p>
-							<!--section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section--!>
-							<!--section-->
 									<div class="row gtr-0">
 										<div class="contact-method col-6 col-12-small">
 											<span class="icon">

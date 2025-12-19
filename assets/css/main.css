@@ -2481,6 +2481,9 @@ button:disabled,
   max-width: 100%;
   width: 65em;
 }
+.spotlights > section > .content h1, .spotlights > section > .content h2, .spotlights > section > .content h3, .spotlights > section > .content h4, .spotlights > section > .content h5, .spotlights > section > .content h6, .spotlights > section > .content p, .spotlights > section > .content strong {
+  color: #ede7e7 !important;
+}
 .spotlights > section:nth-child(2n) {
   -moz-flex-direction: row-reverse;
   -webkit-flex-direction: row-reverse;
@@ -2891,6 +2894,12 @@ body.is-preload #header.alt {
 }
 #banner.major.alt {
   opacity: 0.75;
+}
+#banner.project {
+  background-size: cover;
+  height: 30dvh;
+  min-height: 30em;
+  max-height: none;
 }
 #banner.style1:after {
   background-color: #6fc3df;
