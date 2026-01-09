@@ -13,10 +13,10 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		background-color: _palette(bg-alt);
+		background-color: _palette(background);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
-		font-weight: _font(weight-bold);
+		font-weight: _font(weight-secondary-bold);
 		height: 3.25em;
 		left: 0;
 		letter-spacing: _font(letter-spacing-alt);
@@ -36,13 +36,17 @@
 			line-height: inherit;
 			padding: 0 1.5em;
 
+			img {
+				height: 100%;
+			}
+
 			strong {
 				@include vendor('transition', (
 					'background-color #{_duration(transition)} ease-in-out',
 					'color #{_duration(transition)} ease-in-out'
 				));
-				background-color: _palette(fg-bold);
-				color: _palette(bg);
+				background-color: _palette(secondary-bold);
+				color: _palette(background);
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -51,13 +55,13 @@
 
 			&:hover {
 				strong {
-					background-color: _palette(highlight);
+					background-color: _palette(primary);
 				}
 			}
 
 			&:active {
 				strong {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					background-color: desaturate(darken(_palette(primary), 15), 5);
 				}
 			}
 		}
@@ -87,7 +91,7 @@
 					padding-right: 3.325em !important;
 
 					&:before, &:after {
-						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" preserveAspectRatio="none"><style>line { stroke-width: 2px; stroke: #{_palette(fg-bold)}; }</style><line x1="0" y1="11" x2="24" y2="11" /><line x1="0" y1="21" x2="24" y2="21" /><line x1="0" y1="16" x2="24" y2="16" /></svg>');
+						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="58.02589" height="26.60658" viewBox="0 0 58.02589 26.60658" creator="Katerina Limpitsouni"><path d="M2.41118,6.6878c14.19251-.5618,28.38501-1.1236,42.57752-1.6854,3.20675-.12694,3.22305-5.12758,0-5C30.79619,.5642,16.60368,1.126,2.41118,1.6878c-3.20675,.12694-3.22305,5.12758,0,5h0Z" fill="#{_palette(secondary-bold)}" origin="undraw"/><path d="M17.48464,16.40381l19.28969-.83323c1.34932-.05828,2.5-1.1073,2.5-2.5,0-1.30902-1.14461-2.55855-2.5-2.5l-19.28969,.83323c-1.34932,.05828-2.5,1.1073-2.5,2.5,0,1.30902,1.14461,2.55855,2.5,2.5h0Z" fill="#{_palette(secondary-bold)}"/><path d="M9.51605,26.60099c15.36792-.9339,30.73584-1.86779,46.10377-2.80169,3.19703-.19428,3.21916-5.19563,0-5-15.36792,.9339-30.73584,1.86779-46.10377,2.80169-3.19703,.19428-3.21916,5.19563,0,5h0Z" fill="#{_palette(secondary-bold)}"/></svg>');
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: 24px 32px;
@@ -103,7 +107,7 @@
 
 					&:after {
 						@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" preserveAspectRatio="none"><style>line { stroke-width: 2px; stroke: #{_palette(highlight)}; }</style><line x1="0" y1="11" x2="24" y2="11" /><line x1="0" y1="21" x2="24" y2="21" /><line x1="0" y1="16" x2="24" y2="16" /></svg>');
+						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="58.02589" height="26.60658" viewBox="0 0 58.02589 26.60658" creator="Katerina Limpitsouni"><path d="M2.41118,6.6878c14.19251-.5618,28.38501-1.1236,42.57752-1.6854,3.20675-.12694,3.22305-5.12758,0-5C30.79619,.5642,16.60368,1.126,2.41118,1.6878c-3.20675,.12694-3.22305,5.12758,0,5h0Z" fill="#{_palette(primary)}" origin="undraw"/><path d="M17.48464,16.40381l19.28969-.83323c1.34932-.05828,2.5-1.1073,2.5-2.5,0-1.30902-1.14461-2.55855-2.5-2.5l-19.28969,.83323c-1.34932,.05828-2.5,1.1073-2.5,2.5,0,1.30902,1.14461,2.55855,2.5,2.5h0Z" fill="#{_palette(primary)}"/><path d="M9.51605,26.60099c15.36792-.9339,30.73584-1.86779,46.10377-2.80169,3.19703-.19428,3.21916-5.19563,0-5-15.36792,.9339-30.73584,1.86779-46.10377,2.80169-3.19703,.19428-3.21916,5.19563,0,5h0Z" fill="#{_palette(primary)}"/></svg>');
 						opacity: 0;
 						z-index: 1;
 					}

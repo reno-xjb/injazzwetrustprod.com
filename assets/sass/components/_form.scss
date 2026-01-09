@@ -69,7 +69,7 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: _palette(secondary-bold);
 		display: block;
 		font-size: 0.8em;
 		font-weight: _font(weight-bold);
@@ -87,7 +87,7 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		background: _palette(border-background);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -102,8 +102,8 @@
 		}
 
 		&:focus {
-			border-color: _palette(highlight);
-			box-shadow: 0 0 0 2px _palette(highlight);
+			border-color: _palette(primary);
+			box-shadow: 0 0 0 2px _palette(primary);
 		}
 	}
 
@@ -117,8 +117,8 @@
 		text-overflow: ellipsis;
 
 		option {
-			color: _palette(fg-bold);
-			background: _palette(bg);
+			color: _palette(secondary-bold);
+			background: _palette(background);
 		}
 
 		&:focus {
@@ -158,7 +158,7 @@
 
 		& + label {
 			@include icon(false, solid);
-			color: _palette(fg);
+			color: _palette(secondary);
 			cursor: pointer;
 			display: inline-block;
 			font-weight: _font(weight);
@@ -167,7 +167,7 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: _palette(border-background);
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -184,16 +184,16 @@
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(highlight);
+				background: _palette(secondary-bold);
+				border-color: _palette(primary);
 				content: '\f00c';
-				color: _palette(bg);
+				color: _palette(background);
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(highlight);
+				box-shadow: 0 0 0 2px _palette(primary);
 			}
 		}
 	}
@@ -214,21 +214,21 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(secondary-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(secondary-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(secondary-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: _palette(secondary-light) !important;
 		opacity: 1.0;
 	}

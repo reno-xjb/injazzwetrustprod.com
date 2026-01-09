@@ -45,6 +45,14 @@
 				width: 100%;
 			}
 		}
+		
+		&.square {
+			img {
+				height: auto;
+				aspect-ratio: 1;
+				object-fit: cover;
+			}
+		}
 
 		&.main {
 			display: block;

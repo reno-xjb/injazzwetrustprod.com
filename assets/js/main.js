@@ -195,7 +195,7 @@
 			$window.on('load', function() {
 
 				$banner.scrollex({
-					bottom:		$header.height() + 10,
+					bottom:		$banner.innerHeight(),
 					terminate:	function() { $header.removeClass('alt'); },
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }

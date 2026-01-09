@@ -16,7 +16,7 @@
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
-			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+			background-color: desaturate(lighten(_palette(background-alt), 2), 1);
 
 			> .image {
 				background-position: center center;
@@ -25,15 +25,18 @@
 				display: block;
 				position: relative;
 				width: 30%;
+				align-content: center;
 
 				img {
 					border-radius: 0;
 					display: block;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 
 				&:before {
-					background: transparentize(_palette(bg), 0.1);
+					background: transparentize(_palette(background), 0.1);
 					content: '';
 					display: block;
 					height: 100%;
@@ -45,28 +48,38 @@
 				}
 			}
 
-			> .content {
+			> .content, > .content-only {
 				@include vendor('display', 'flex');
 				@include vendor('flex-direction', 'column');
 				@include vendor('justify-content', 'center');
 				@include vendor('align-items', 'center');
 				@include padding(2em, 3em);
-				width: 70%;
 
 				> .inner {
 					margin: 0 auto;
 					max-width: 100%;
 					width: _size(inner);
 				}
+				h1, h2, h3, h4, h5, h6, p, strong {
+					color: _palette(background) !important;
+				}
+			}
+			
+			> .content {
+				width: 70%;
+			}
+
+			> .content-only {
+				width: 100%;
 			}
 
 			&:nth-child(2n) {
 				@include vendor('flex-direction', 'row-reverse');
-				background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+				background-color: desaturate(lighten(_palette(background-alt), 4), 2);
 
-				> .content {
+				/*> .content {
 					@include vendor('align-items', 'flex-end');
-				}
+				}*/
 			}
 		}
 

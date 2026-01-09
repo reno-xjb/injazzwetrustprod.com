@@ -7,10 +7,10 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: _palette(fg);
-		font-family: _font(family);
+		color: _palette(secondary);
+		font-family: _font(family-secondary);
 		font-size: 17pt;
-		font-weight: _font(weight);
+		font-weight: _font(weight-secondary);
 		letter-spacing: _font(letter-spacing);
 		line-height: 1.65;
 
@@ -38,17 +38,17 @@
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(highlight) !important;
+			color: _palette(primary) !important;
 		}
 
 		&:active {
-			color: desaturate(darken(_palette(highlight), 15), 5) !important;
+			color: desaturate(darken(_palette(primary), 15), 5) !important;
 		}
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
+		color: _palette(secondary);
+		font-weight: _font(weight-secondary-bold);
 	}
 
 	em, i {
@@ -60,8 +60,9 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
+		font-family: _font(family-primary); 
+		color: _palette(secondary);
+		font-weight: _font(weight-primary);
 		line-height: 1.65;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -129,7 +130,7 @@
 	}
 
 	code {
-		background: _palette(border-bg);
+		background: _palette(border-background);
 		font-family: _font(family-fixed);
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -170,4 +171,10 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	#header {
+		nav {
+			font-family: _font(family-primary);
+		}
 	}

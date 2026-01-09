@@ -31,11 +31,9 @@
 			}
 		}
 
-		&.alt {
+		&.alt, &.alt-inverted {
 			&:before {
-				background-color: _palette(fg-bold);
 				border-radius: 100%;
-				color: _palette(bg);
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;
@@ -43,23 +41,36 @@
 				width: 2em;
 			}
 		}
+
+		&.alt {
+			&:before {
+				background-color: _palette(secondary-bold);
+				color: _palette(background);
+			}
+		}
+		&.alt-inverted {
+			&:before {
+				background-color: _palette(background);
+				color: _palette(secondary-bold);
+			}
+		}
 	}
 
 	a.icon {
-		&.alt {
+		&.alt, &.alt-inverted {
 			&:before {
 				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
 			}
 
 			&:hover {
 				&:before {
-					background-color: _palette(accent1);
+					background-color: _palette(primary);
 				}
 			}
 
 			&:active {
 				&:before {
-					background-color: desaturate(darken(_palette(accent1), 15), 5);
+					background-color: desaturate(darken(_palette(primary), 15), 5);
 				}
 			}
 		}

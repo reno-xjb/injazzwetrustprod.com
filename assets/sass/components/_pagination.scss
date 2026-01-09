@@ -33,16 +33,16 @@
 				text-align: center;
 
 				&.active {
-					background-color: _palette(fg-bold);
-					color: _palette(bg);
+					background-color: _palette(secondary-bold);
+					color: _palette(background);
 
 					&:hover {
-						background-color: _palette(highlight);
-						color: _palette(bg) !important;
+						background-color: _palette(primary);
+						color: _palette(background) !important;
 					}
 
 					&:active {
-						background-color: desaturate(darken(_palette(highlight), 15), 5);
+						background-color: desaturate(darken(_palette(primary), 15), 5);
 					}
 				}
 			}

@@ -22,7 +22,7 @@
 				border-right: 0;
 
 				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
+					background-color: _palette(border-background);
 				}
 			}
 		}
@@ -32,9 +32,9 @@
 		}
 
 		th {
-			color: _palette(fg-bold);
+			color: _palette(secondary-bold);
 			font-size: 0.9em;
-			font-weight: _font(weight-bold);
+			font-weight: _font(weight-secondary-bold);
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}

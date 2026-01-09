@@ -8,16 +8,21 @@
 
 	.contact-method {
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 3.25em;
+		padding-left: 3.25em !important;
 		position: relative;
 
 		.icon {
 			left: 0;
 			position: absolute;
 			top: 0;
+			height: 32px;
+			width: 32px;
 		}
 
 		h3 {
+			margin: 0 0 (_size(element-margin) * 0.25) 0;
+		}
+		p {
 			margin: 0 0 (_size(element-margin) * 0.25) 0;
 		}
 	}
