@@ -140,14 +140,10 @@
 										<header class="major">
 											<h2>Audio</h2>
 										</header>
-										<div id="track1" class="bandcamp-wrapper">
-											<iframe allowtransparency="true" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=204715988/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://2blebarrel.bandcamp.com/track/teaser-medley-live">Teaser Medley (Live) by 2ble Barrel</a></iframe>
-										</div>
-										<div id="track2" class="bandcamp-wrapper">
-										<iframe allowtransparency="true" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3583322194/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://2blebarrel.bandcamp.com/track/stardust-live">Stardust (Live) by 2ble Barrel</a></iframe>
-										</div>
-										<div id="track3" class="bandcamp-wrapper">
-										<iframe allowtransparency="true" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=844586195/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://2blebarrel.bandcamp.com/track/i-heard-it-through-the-grapevine">I Heard It Through The Grapevine by 2ble Barrel</a></iframe>
+										<div class="bandcamp-wrapper">
+											<p>
+											<iframe width="350px" height="588px" title="Bandcamp Music Player" style="border: 0; width: 350px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=4192852561/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://2blebarrel.bandcamp.com/album/2ble-barrel-live-2025">2ble Barrel - Live 2025 by 2ble Barrel</a></iframe>
+											</p>
 										</div>
 									</div>
 								</section>
@@ -244,12 +240,6 @@
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
 
-					/*document.getElementsByID
-
-					<div class="col-2 col-3-medium col-4-small col-6-xsmall"><a class="spotlight image fit" href="/images/2ble-barrel/2ble-Barrel-La-Baleine-Blanche-Julie-Chochon-copyright-Cedrick-Not.png">
-							<img src="/images/2ble-barrel/2ble-Barrel-La-Baleine-Blanche-Julie-Chochon-copyright-Cedrick-Not.png">
-					</a></div>
-*/
 					const images = [
 						'2Ble Barrel - La Baleine Blanche - Cedrick Not (111).png',
 '2Ble Barrel - La Baleine Blanche - Cedrick Not (116).png',
@@ -308,26 +298,6 @@
 							div.appendChild(a);
 							gallery.appendChild(div);
 					
-						}
-					}
-
-					const stopBandcampPlayersExcept = function(id) {
-						const wrappers = document.getElementsByClassName('bandcamp-wrapper');
-						for (let wrapper of wrappers) {
-							if (wrapper.id === id) {
-								continue;
-							}
-							const iframes = wrapper.getElementsByTagName('iframe');
-							for (let iframe of iframes) {
-								iframe.src = iframe.src;
-							}
-						}
-					}
-
-					const wrappers = document.getElementsByClassName('bandcamp-wrapper');
-					for (let wrapper of wrappers) {
-						wrapper.onmouseover = function() {
-							stopBandcampPlayersExcept(wrapper.id);
 						}
 					}
 				});

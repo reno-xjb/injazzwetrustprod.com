@@ -2584,9 +2584,13 @@ button:disabled,
 }
 
 /* Youtube Wrapper */
-.bandcamp-wrapper {
-  width: 100%;
-  margin-bottom: 2em;
+.bandcamp-wrapper p {
+  text-align: center;
+}
+.bandcamp-wrapper iframe {
+  border: 0;
+  max-width: fit-content;
+  height: 588px;
 }
 
 .visually-hidden {

@@ -7,6 +7,13 @@
 /* Youtube Wrapper */
 
 	.bandcamp-wrapper {
-		width: 100%;
-		margin-bottom: 2em;
+		p {
+			text-align: center;
+		}
+
+		iframe {
+			border: 0;
+			max-width: fit-content;
+			height: 588px;
+		}
 	}
