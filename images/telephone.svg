@@ -1,0 +1,16 @@
+<svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap");
+@import url('/assets/css/main.css');
+text {
+	dominant-baseline: middle;
+	text-anchor: middle;
+}
+</style>
+
+<a href="tel:+33-761693381">
+	<text class="svg-obfuscated" x="50%" y="50%">(+33) 761693381</text>
+</a>
+
+</svg>
