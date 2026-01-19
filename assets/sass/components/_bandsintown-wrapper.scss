@@ -11,3 +11,66 @@
 			border-bottom-width: 0px;
 		}
 	}
+	.bandsintown-event {
+		@include padding(1em, 0, (0, 0, 2em, 0));
+		border-bottom: solid 1px _palette(secondary-light);
+	}
+
+	.bandsintown-date {
+		font-weight: _font(weight-secondary-bold);
+	
+		> a {
+			border-bottom: 0;
+		}
+	}
+
+	.bandsintown-band, .bandsintown-lineup {
+		font-family: _font(family-primary);
+	}
+
+	.bandsintown-band {
+		font-weight: _font(weight-primary);
+		font-size: 1.35em;
+		
+		> a {
+			border-bottom: 0;
+		}
+	}
+
+	.bandsintown-lineup {
+		font-weight: _font(weight-secondary);
+	}
+
+
+	.bandsintown-details {
+		text-align: left;
+	}
+
+	.bandsintown-prices {
+		text-align: center;
+	}
+
+	.bandsintown-location {
+		text-align: left;
+	}
+	.bandsintown-location-last {
+		text-align: right;
+	}
+
+	@include breakpoint('<=xsmall') {
+		.bandsintown-band {
+			font-size: 1.25em;
+		}
+		.bandsintown-details {
+			text-align: center;
+		}
+		.bandsintown-prices {
+			text-align: center;
+		}
+		.bandsintown-location {
+			text-align: center;
+		}
+		.bandsintown-location-last {
+			text-align: center;
+		}
+	}
